@@ -1,6 +1,6 @@
 
 const AllDonate = ({donating}) => {
-    const {id, image2, title, category, category_bg_clr, card_bg_clr, text_color, button_color, description, price} = donating || {}
+    const {id, image2, title, category, category_bg_clr, card_bg_clr, text_color, button_color, price} = donating || {}
     return (
         <div>
              <div className=" shadow-2xl flex border-none rounded h-[250px] " style={{ backgroundColor: card_bg_clr }}>
@@ -8,7 +8,7 @@ const AllDonate = ({donating}) => {
                 <div className="card-body">
                     <div className="space-y-3 ">
                         <button className=" rounded px-2 border-none font-semibold" style={{ backgroundColor: category_bg_clr, color: button_color}}>{category}</button>
-                    <h2 className="font-medium text-black text-2xl" >{title}</h2>
+                    <h2 className=" text-black text-2xl" >{title}</h2>
                     <p className="font-bold" style={{ color: text_color }}>{price} </p>
                     <button className=" rounded px-4 py-2 border-none font-semibold text-white" style={{ backgroundColor: text_color}}>View Details</button>
                     </div>

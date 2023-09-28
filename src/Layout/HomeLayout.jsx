@@ -4,7 +4,7 @@ import Navbar from "../components/Header/Navbar/Navbar";
 const HomeLayout = () => {
     return (
         <div>
-        <div className="w-[90%] mx-auto">
+        <div className="w-[100%] mx-auto">
             <Navbar></Navbar>
             <Outlet></Outlet>
             

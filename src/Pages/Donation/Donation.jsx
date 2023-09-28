@@ -25,7 +25,7 @@ const Donation = () => {
             {noFound ? (
                 <p className="h-[80vh] flex justify-center items-center">{noFound}</p>
             ) : (
-                <div className="h-[100%] py-20">
+                <div className="h-[100vh] py-20 mb-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                         {donations.slice(0, displayedDonations).map(donating => 
                             <AllDonate key={donating.id} donating={donating} />
