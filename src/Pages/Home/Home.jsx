@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Banner from "../../components/Header/Banner/Banner";
 import Card from "../../components/Cards/Card";
 
-// I'm assuming you're importing the data from somewhere
+
 import Datas from '../../../public/Datas.json';
 
 const Home = () => {
