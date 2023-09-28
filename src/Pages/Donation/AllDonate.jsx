@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const AllDonate = ({donating}) => {
     const {id, image2, title, category, category_bg_clr, card_bg_clr, text_color, button_color, price} = donating || {}
@@ -10,7 +11,9 @@ const AllDonate = ({donating}) => {
                         <button className=" rounded px-2 border-none font-semibold" style={{ backgroundColor: category_bg_clr, color: button_color}}>{category}</button>
                     <h2 className=" text-black text-2xl" >{title}</h2>
                     <p className="font-bold" style={{ color: text_color }}>{price} </p>
+                    <Link to={`/cardsdetails/${id}`}>
                     <button className=" rounded px-4 py-2 border-none font-semibold text-white" style={{ backgroundColor: text_color}}>View Details</button>
+                    </Link>
                     </div>
                 </div>
             </div>

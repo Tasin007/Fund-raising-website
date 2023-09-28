@@ -1,11 +1,10 @@
-
 import { useState } from 'react';
 
 const Banner = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState("");
 
     return (
-        <div className="relative bg-cover bg-center" style={{ backgroundImage: "url('./Resources/Rectangle-4281.png')" }}>
+        <div className="relative bg-cover bg-center" style={{ backgroundImage: `url('https://i.ibb.co/qgpZ9xm/banner.jpg')` }}>
             <div className="absolute inset-0 bg-white opacity-50"></div>
             <div className="h-[60vh] text-center py-56 relative">
                 <h1 className="text-4xl font-bold text-black">I Grow By Helping People In Need</h1>
